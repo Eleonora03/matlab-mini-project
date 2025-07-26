@@ -101,7 +101,7 @@ saveas(fig, 'Reference Spectra and Principal Component Loadings and Principal Co
 %    Scores Scatter Plot     %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-figure()
+fig = figure();
 Sprime = S * diag(1.0 ./ sqrt(sigma));
 plot(Sprime(:, 1), Sprime(:, 2), 'ro');
 xlabel('PC1 Score');
